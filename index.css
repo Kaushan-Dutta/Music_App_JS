@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("./public/wallpaper.jpg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contents .heading {
+  background-color: black;
+  width: 100%;
+}
+.heading .nav {
+  color: whitesmoke;
+  font-family: "Jolly Lodger", cursive;
+  margin: auto 5%;
+  padding: 6px 10px 6px;
+  font-size: 34px;
+}
+.music_content .search_bar {
+  text-align: center;
+  width: 100%;
+}
+.music_content .search_bar input {
+  width: 40%;
+  padding: 5px 15px 5px 15px;
+  border-radius: 25px;
+}
+@media screen and (max-width: 800px) {
+  .music_content .search_bar input {
+    width: 60%;
+  }
+}
+.R_playlist {
+  margin: auto 5%;
+}
+
+.R_title {
+  color: white;
+  font-family: "Oregano";
+  font-size: 30px;
+}
+.R_content {
+  margin: auto 4%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 50px;
+  row-gap: 20px;
+  text-align: center;
+}
+.R_content .music-block {
+  border-radius: 5px;
+  max-width: 250px;
+}
+#item_1 {
+  background-color: #bfedc4;
+}
+#item_2 {
+  background-color: #bfedc5;
+}
+#item_3 {
+  background-color: #cbedbf;
+}
+.R_content .music-block span {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  padding: 10px 0px 10px 0px;
+}
+.R_content .music-block span img {
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+}
+.R_content .music-block span i {
+  font-size: 22px;
+}
+.R_content .music-block span h1 {
+  font-family: "Sansita", sans-serif;
+  font-size: 20px;
+  position: relative;
+  top: 2px;
+}
+@media screen and (max-width: 860px) {
+  .R_content {
+    margin: auto 14%;
+    grid-template-columns: auto auto;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  .R_content {
+    margin: auto 15%;
+    grid-template-columns: auto;
+  }
+  .R_content .music-block {
+    max-width: 350px;
+    min-width: 200px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .R_content {
+    margin: auto;
+    grid-template-columns: auto;
+  }
+  .R_content .music-block {
+    max-width: 350px;
+    min-width: 200px;
+  }
+}
+.music-block span p {
+  display: none;
+}
